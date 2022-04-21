@@ -3,37 +3,36 @@ Focus color:                #2196F3;
 Primary text color:         #212121;
 Secondary text color:       #757575;
 Active white color:         #FFFFFF;
-BG button color:            #F5F4FA;
+Background button color:    #F5F4FA;
+Background color:           #2F303A;
 */
+
 
 :root {
     --focus-color:#2196F3;
     --pimary-text: #212121;
     --secondary-text: #757575;
     --active-white: #FFFFFF;
-    --bg-button: #F5F4FA ;
+    --bg-btn-color: #F5F4FA;
+    --bg-color: #2F303A;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
     font-weight: 400;
     font-size: 14px;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text);
 }
 
 /* Header logo */
-.logo-header {
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
+    text-decoration: none;
     color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-part {
@@ -41,11 +40,14 @@ li {
 }
 
 /* Header navigation */
-.header-nav li {
+.navigation-list,
+.contacts-header {
+    list-style: none;
     font-weight: 500;
 }
 
-.nav-item {
+.link {
+    text-decoration: none;
     color: var(--pimary-text);
 }
 
@@ -54,39 +56,73 @@ li {
     color: var(--focus-color);
 }
 
-.nav-item.active {
+.link.active {
     color: var(--focus-color);
 }
 
-/* Header contacts */
+/* Header contact */
 .contact-item {
     color: var(--secondary-text);
 }
 
 /* Action side */
 .action-box {
-    background-color: #2F303A;
-    text-align: center;
+    height: 600px;
+    background-color: var(--bg-color);
 }
 
 .caption-main {
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
-    text-transform: uppercase;
+    line-height: 60px;
     letter-spacing: 0.06em;
-    height: 60px;
     color: var(--active-white);
+    text-transform: uppercase;
 }
 
 .order-btn {
-    padding: 10px 32px;
-    font-weight: 700;
-    font-size: 16px;
     width: 200px;
     height: 50px;
-    background-color: var(--focus-color);
-    color: var(--active-white);
     border: none;
     border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--active-white);
+    background-color: var(--focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+}
+
+/* Advanture side */
+.title-sections.hidden {
+    visibility: hidden;
+}
+
+.advantage-list li {
+    margin: 30px;
+    width: 270px;
+    height: 101px;
+    display: inline-block;
+}
+
+.advantage-subtitle {
+    font-weight: 700;
+    color: var(--pimary-text);
+    text-transform: uppercase;
+}
+
+.advantuge-text {
+    line-height: 24px;
+}
+
+/* About us side */
+
+.title-sections {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--pimary-text);
 }
