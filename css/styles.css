@@ -1,0 +1,92 @@
+/* 
+Focus color:                #2196F3;
+Primary text color:         #212121;
+Secondary text color:       #757575;
+Active white color:         #FFFFFF;
+BG button color:            #F5F4FA;
+*/
+
+:root {
+    --focus-color:#2196F3;
+    --pimary-text: #212121;
+    --secondary-text: #757575;
+    --active-white: #FFFFFF;
+    --bg-button: #F5F4FA ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header logo */
+.logo-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+.logo-part {
+    color: var(--focus-color);
+}
+
+/* Header navigation */
+.header-nav li {
+    font-weight: 500;
+}
+
+.nav-item {
+    color: var(--pimary-text);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--focus-color);
+}
+
+.nav-item.active {
+    color: var(--focus-color);
+}
+
+/* Header contacts */
+.contact-item {
+    color: var(--secondary-text);
+}
+
+/* Action side */
+.action-box {
+    background-color: #2F303A;
+    text-align: center;
+}
+
+.caption-main {
+    font-weight: 900;
+    font-size: 44px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    height: 60px;
+    color: var(--active-white);
+}
+
+.order-btn {
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--focus-color);
+    color: var(--active-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
