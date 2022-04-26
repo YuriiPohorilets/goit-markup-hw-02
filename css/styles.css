@@ -168,7 +168,7 @@ body {
 .address-link {
     font-style: normal;
     text-decoration: none;
-    color: var(--secondary-text);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .address-link:hover,
